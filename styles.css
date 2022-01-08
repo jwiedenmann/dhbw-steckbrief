@@ -18,17 +18,62 @@
 
 .card:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-top: -0.1rem;
+    transform: translateY(-1rem);
+}
+
+.cardcontent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container2x {
+    flex-grow: 2;
+    flex-shrink: 2;
+    /* flex-basis: 15rem; */
+}
+
+.container1x {
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* flex-basis: 5rem; */
+}
+
+.reverseflex {
+    flex-direction: row-reverse;
+}
+
+.cardcontent img {
+    max-width: 10rem;
+    padding: 0.5rem;
+}
+
+.cardcontent>* {
+    padding-left: 0.5rem;
+
 }
 
 .cardcontent table, ul {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     font-size: 1rem;
+    list-style-position: inside;
     list-style-type: disc;
+    margin-bottom: auto;
+    padding: 0;
+    margin: 0;
 }
 
 .cardcontent td, li {
     font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.centerimg {
+    text-align: center;
+}
+
+.leftimg {
+    text-align: left;
 }
 
 .headline {
@@ -44,7 +89,7 @@
     letter-spacing: 0.15em;
 
     display: inline-block;
-    padding: 15px 20px;
+    padding: 0.5rem 0.5rem;
     position: relative;
 }
 
@@ -64,4 +109,9 @@
 .card:hover .cardheadline:after {
     width: 100%;
     left: 0;
+}
+
+a {
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-size: 1rem;
 }
